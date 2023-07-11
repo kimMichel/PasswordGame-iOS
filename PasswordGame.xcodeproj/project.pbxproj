@@ -56,15 +56,39 @@
 		1EAB24372A5DCB6D0075C40A /* PasswordGame */ = {
 			isa = PBXGroup;
 			children = (
+				1EAB244C2A5DCD540075C40A /* Model */,
+				1EAB244D2A5DCD5F0075C40A /* View */,
+				1EAB244E2A5DCD660075C40A /* Controller */,
 				1EAB24382A5DCB6D0075C40A /* AppDelegate.swift */,
 				1EAB243A2A5DCB6D0075C40A /* SceneDelegate.swift */,
-				1EAB243C2A5DCB6D0075C40A /* ViewController.swift */,
-				1EAB243E2A5DCB6D0075C40A /* Main.storyboard */,
 				1EAB24412A5DCB6F0075C40A /* Assets.xcassets */,
-				1EAB24432A5DCB6F0075C40A /* LaunchScreen.storyboard */,
 				1EAB24462A5DCB6F0075C40A /* Info.plist */,
 			);
 			path = PasswordGame;
+			sourceTree = "<group>";
+		};
+		1EAB244C2A5DCD540075C40A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		1EAB244D2A5DCD5F0075C40A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EAB243E2A5DCB6D0075C40A /* Main.storyboard */,
+				1EAB24432A5DCB6F0075C40A /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EAB244E2A5DCD660075C40A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				1EAB243C2A5DCB6D0075C40A /* ViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
