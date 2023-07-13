@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var passwordLabel: UITextField!
+    @IBOutlet var table: UITableView!
+    
+    var level = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        title = "Level: \(level)"
+        
     }
 
 

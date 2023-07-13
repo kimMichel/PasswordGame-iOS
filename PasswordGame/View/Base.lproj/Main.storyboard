@@ -40,6 +40,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="lvt-IR-Rns"/>
+                    <connections>
+                        <outlet property="passwordLabel" destination="Mi1-gk-6cS" id="PgZ-sI-k05"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpa-eJ-xgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
