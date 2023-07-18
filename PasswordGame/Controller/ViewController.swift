@@ -7,20 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, ValidationManagerDelegate {
 
     @IBOutlet var passwordLabel: UITextField!
     @IBOutlet var table: UITableView!
+    @IBOutlet var validationLabel: UILabel!
     
-    var level = 1
+    var validationManager = ValidationManager()
+    
+    var level = 1 {
+        didSet {
+            title = "Level: \(level)"
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        validationManager.delegate = self
         
-        title = "Level: \(level)"
-        
+        validationManager.startGame()
     }
 
+    func didUpdateValidationLabel(validation: String) {
+        validationLabel.text = validation
+    }
 
 }
 

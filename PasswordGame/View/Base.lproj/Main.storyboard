@@ -27,12 +27,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALIDATION" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-hG-PjD">
+                                <rect key="frame" x="20" y="229" width="353" height="28.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FG0-Y2-Sik"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Wbd-hG-PjD" firstAttribute="top" secondItem="Mi1-gk-6cS" secondAttribute="bottom" constant="20" id="JV4-ql-Suu"/>
                             <constraint firstItem="Mi1-gk-6cS" firstAttribute="top" secondItem="DOn-bo-RAL" secondAttribute="bottom" constant="16" id="NG0-Nn-f5s"/>
                             <constraint firstItem="DOn-bo-RAL" firstAttribute="top" secondItem="FG0-Y2-Sik" secondAttribute="top" constant="20" id="UTw-2j-oHr"/>
+                            <constraint firstItem="Wbd-hG-PjD" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="dg4-41-5Ox"/>
+                            <constraint firstItem="FG0-Y2-Sik" firstAttribute="trailing" secondItem="Wbd-hG-PjD" secondAttribute="trailing" constant="20" id="qfc-am-XvY"/>
                             <constraint firstItem="Mi1-gk-6cS" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="rrZ-JS-TwQ"/>
                             <constraint firstItem="FG0-Y2-Sik" firstAttribute="trailing" secondItem="Mi1-gk-6cS" secondAttribute="trailing" constant="20" id="uup-cN-Hf8"/>
                             <constraint firstItem="DOn-bo-RAL" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="w0E-MQ-lqy"/>
@@ -42,6 +51,7 @@
                     <navigationItem key="navigationItem" id="lvt-IR-Rns"/>
                     <connections>
                         <outlet property="passwordLabel" destination="Mi1-gk-6cS" id="PgZ-sI-k05"/>
+                        <outlet property="validationLabel" destination="Wbd-hG-PjD" id="Dd6-Ta-pTP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpa-eJ-xgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
