@@ -17,6 +17,8 @@ struct ValidationManager {
     
     let validations = [
         "Minimo de 6 digitos.",
+        "6 digitos numericos",
+        "Conter pelo menos uma letra minuscula e maiuscula"
     ]
     
     func startGame() {
