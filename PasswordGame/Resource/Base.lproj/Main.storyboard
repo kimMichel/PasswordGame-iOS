@@ -27,21 +27,47 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VALIDATION" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wbd-hG-PjD">
-                                <rect key="frame" x="20" y="229" width="353" height="28.666666666666686"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="PML-7m-Thx">
+                                <rect key="frame" x="20" y="229" width="353" height="623"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="n2I-NH-pTU" customClass="ValidationTableViewCell" customModule="PasswordGame" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="353" height="50.666667938232422"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="n2I-NH-pTU" id="VpN-ug-CwG">
+                                            <rect key="frame" x="0.0" y="0.0" width="353" height="50.666667938232422"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMq-TA-Quo">
+                                                    <rect key="frame" x="20" y="15.000000000000002" width="313" height="20.666666666666671"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="oMq-TA-Quo" firstAttribute="top" secondItem="VpN-ug-CwG" secondAttribute="top" constant="15" id="8wT-p7-Jd2"/>
+                                                <constraint firstAttribute="trailing" secondItem="oMq-TA-Quo" secondAttribute="trailing" constant="20" symbolic="YES" id="Afa-jX-TRX"/>
+                                                <constraint firstAttribute="bottom" secondItem="oMq-TA-Quo" secondAttribute="bottom" constant="15" id="CE5-Rt-E54"/>
+                                                <constraint firstItem="oMq-TA-Quo" firstAttribute="leading" secondItem="VpN-ug-CwG" secondAttribute="leading" constant="20" symbolic="YES" id="pcz-aq-ZAE"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="label" destination="oMq-TA-Quo" id="6ta-WX-JGT"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FG0-Y2-Sik"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Wbd-hG-PjD" firstAttribute="top" secondItem="Mi1-gk-6cS" secondAttribute="bottom" constant="20" id="JV4-ql-Suu"/>
+                            <constraint firstItem="PML-7m-Thx" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="4W7-3V-tPH"/>
+                            <constraint firstItem="PML-7m-Thx" firstAttribute="top" secondItem="Mi1-gk-6cS" secondAttribute="bottom" constant="20" id="Iy8-UR-3dJ"/>
+                            <constraint firstAttribute="bottom" secondItem="PML-7m-Thx" secondAttribute="bottom" id="L5U-ad-fQE"/>
                             <constraint firstItem="Mi1-gk-6cS" firstAttribute="top" secondItem="DOn-bo-RAL" secondAttribute="bottom" constant="16" id="NG0-Nn-f5s"/>
+                            <constraint firstItem="FG0-Y2-Sik" firstAttribute="trailing" secondItem="PML-7m-Thx" secondAttribute="trailing" constant="20" id="SYo-hk-739"/>
                             <constraint firstItem="DOn-bo-RAL" firstAttribute="top" secondItem="FG0-Y2-Sik" secondAttribute="top" constant="20" id="UTw-2j-oHr"/>
-                            <constraint firstItem="Wbd-hG-PjD" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="dg4-41-5Ox"/>
-                            <constraint firstItem="FG0-Y2-Sik" firstAttribute="trailing" secondItem="Wbd-hG-PjD" secondAttribute="trailing" constant="20" id="qfc-am-XvY"/>
                             <constraint firstItem="Mi1-gk-6cS" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="rrZ-JS-TwQ"/>
                             <constraint firstItem="FG0-Y2-Sik" firstAttribute="trailing" secondItem="Mi1-gk-6cS" secondAttribute="trailing" constant="20" id="uup-cN-Hf8"/>
                             <constraint firstItem="DOn-bo-RAL" firstAttribute="leading" secondItem="FG0-Y2-Sik" secondAttribute="leading" constant="20" id="w0E-MQ-lqy"/>
@@ -50,8 +76,8 @@
                     </view>
                     <navigationItem key="navigationItem" id="lvt-IR-Rns"/>
                     <connections>
-                        <outlet property="passwordLabel" destination="Mi1-gk-6cS" id="PgZ-sI-k05"/>
-                        <outlet property="validationLabel" destination="Wbd-hG-PjD" id="Dd6-Ta-pTP"/>
+                        <outlet property="passwordField" destination="Mi1-gk-6cS" id="tDx-II-f5d"/>
+                        <outlet property="tableView" destination="PML-7m-Thx" id="t7I-v3-t1H"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zpa-eJ-xgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

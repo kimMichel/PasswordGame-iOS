@@ -13,6 +13,7 @@
 		1EA6FF8C2A70591A00C0DC48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA6FF802A70591A00C0DC48 /* LaunchScreen.storyboard */; };
 		1EA6FF8D2A70591A00C0DC48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EA6FF822A70591A00C0DC48 /* Main.storyboard */; };
 		1EA6FF8E2A70591A00C0DC48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6FF862A70591A00C0DC48 /* ViewController.swift */; };
+		1EA6FF932A70AFE600C0DC48 /* ValidationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA6FF922A70AFE600C0DC48 /* ValidationTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		1EA6FF812A70591A00C0DC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EA6FF832A70591A00C0DC48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EA6FF862A70591A00C0DC48 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1EA6FF922A70AFE600C0DC48 /* ValidationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationTableViewCell.swift; sourceTree = "<group>"; };
 		1EAB24352A5DCB6D0075C40A /* PasswordGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EAB24462A5DCB6F0075C40A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -60,7 +62,7 @@
 			isa = PBXGroup;
 			children = (
 				1EA6FF872A70591A00C0DC48 /* Model */,
-				1EA6FF852A70591A00C0DC48 /* Controller */,
+				1EA6FF902A705AD900C0DC48 /* View */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -78,6 +80,23 @@
 			children = (
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		1EA6FF902A705AD900C0DC48 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1EA6FF912A70AFC500C0DC48 /* Cell */,
+				1EA6FF852A70591A00C0DC48 /* Controller */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1EA6FF912A70AFC500C0DC48 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1EA6FF922A70AFE600C0DC48 /* ValidationTableViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		1EAB242C2A5DCB6D0075C40A = {
@@ -180,6 +199,7 @@
 			files = (
 				1EA6FF892A70591A00C0DC48 /* AppDelegate.swift in Sources */,
 				1EA6FF8E2A70591A00C0DC48 /* ViewController.swift in Sources */,
+				1EA6FF932A70AFE600C0DC48 /* ValidationTableViewCell.swift in Sources */,
 				1EA6FF8A2A70591A00C0DC48 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
